@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{199F5D5D-AD6A-411E-9615-7297BE4CAB84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FactureDevoir.wind</RootNamespace>
+    <AssemblyName>FactureDevoir.wind</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FomrSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomrSplash.Designer.cs">
+      <DependentUpon>FomrSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationFacture.Designer.cs">
+      <DependentUpon>InformationFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationProduct.Designer.cs">
+      <DependentUpon>InformationProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InforrmationClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InforrmationClient.Designer.cs">
+      <DependentUpon>InforrmationClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log.Designer.cs">
+      <DependentUpon>Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="previewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="previewUser.Designer.cs">
+      <DependentUpon>previewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportlist.cs" />
+    <Compile Include="View1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View1.Designer.cs">
+      <DependentUpon>View1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View2.Designer.cs">
+      <DependentUpon>View2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FomrSplash.resx">
+      <DependentUpon>FomrSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationFacture.resx">
+      <DependentUpon>InformationFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationProduct.resx">
+      <DependentUpon>InformationProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InforrmationClient.resx">
+      <DependentUpon>InforrmationClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log.resx">
+      <DependentUpon>Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="previewUser.resx">
+      <DependentUpon>previewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="View1.resx">
+      <DependentUpon>View1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View2.resx">
+      <DependentUpon>View2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\reportlist.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_sign_out_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
